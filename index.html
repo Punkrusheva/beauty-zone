@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title lang="en">Beauty Zone</title>
-    <!-- Styles -->
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
@@ -13,10 +13,10 @@
           <img src="./images/logo.svg" alt="logo beauty zone" />
         </a>
         <ul>
-          <li><a href="#about-us">Про нас</a></li>
-          <li><a href="#why-us">Чому ми</a></li>
-          <li><a href="#our-procedures">Наші процедури</a></li>
-          <li><a href="#contacts">Контакти</a></li>
+          <li><a class="nav-link" href="#about-us">Про нас</a></li>
+          <li><a class="nav-link" href="#why-us">Чому ми</a></li>
+          <li><a class="nav-link" href="#our-procedures">Наші процедури</a></li>
+          <li><a class="nav-link" href="#contacts">Контакти</a></li>
         </ul>
       </nav>
       <ul>
@@ -25,17 +25,17 @@
         <li><a href="#" target="_blank">Instagram</a></li>
       </ul>
     </header>
-    <main>
-      <section id="cosmetology-clinic">
+    <main class="main">
+      <section class="main-section" id="cosmetology-clinic">
         <p>Косметологічна клініка</p>
-        <h1 lang="en">
-          <img src="./images/logo.svg" alt="logo beauty zone" />
-        </h1>
-        <button type="button">Замовити дзвінок</button>
+        <h1 class="hero-title">Beauty Zone</h1>
+        <button class="button" type="button">Замовити дзвінок</button>
         <p>Запишись та отримай безкоштовну консультацію нашого косметолога</p>
       </section>
       <section id="about-us">
-        <h2>Перевтілюйтесь в <span lang="en">beauty zone!</span></h2>
+        <h2 class="section-title">
+          Перевтілюйтесь в <span class="accent" lang="en">Beauty Zone!</span>
+        </h2>
         <p>
           Наша косметологічна клініка пропонує вам професійні послуги з догляду
           за шкірою обличчя та тіла.
@@ -53,7 +53,9 @@
         />
       </section>
       <section id="why-us">
-        <h2>Чому люди обирають нас</h2>
+        <h2 class="section-title">
+          Чому люди <span class="accent">обирають нас</span>
+        </h2>
         <ul>
           <li>
             <article>
@@ -85,7 +87,9 @@
         </ul>
       </section>
       <section id="our-procedures">
-        <h2>Наші процедури</h2>
+        <h2 class="section-title">
+          Наші <span class="accent">процедури</span>
+        </h2>
         <ul>
           <li>
             <article>
@@ -111,10 +115,18 @@
         </ul>
       </section>
       <section id="contacts">
-        <h2>Як нас <span>знайти</span></h2>
-        <img src="./images/map.jpg" alt="карта розташування салону" />
+        <h2 class="section-title">Як нас <span class="accent">знайти</span></h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d635.2351965444534!2d30.5178739!3d50.4422036!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C7LiDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQviwgNSwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1731680493396!5m2!1sru!2sua"
+          width="605"
+          height="481"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
         <p>Запишіться <span>безкоштовно</span> та отримайте подарунок</p>
-        <button type="submit">Записатись безкоштовно</button>
+        <button class="button" type="submit">Записатись безкоштовно</button>
         <p>
           Натискаючи на кнопку я погоджуюсь
           <span>з політикою конфіденційності</span>
@@ -125,22 +137,13 @@
       <a href="/"><img src="./images/logo.svg" alt="logo beauty zone" /> </a>
       <nav>
         <ul>
-          <li><a href="#about-us">Про нас</a></li>
-          <li><a href="#why-us">Чому ми</a></li>
-          <li><a href="#our-procedures">Наші процедури</a></li>
-          <li><a href="#contacts">Контакти</a></li>
+          <li><a class="footer-nav-link" href="#about-us">Про нас</a></li>
+          <li><a class="footer-nav-link" href="#why-us">Чому ми</a></li>
+          <li><a class="footer-nav-link" href="#our-procedures">Наші процедури</a></li>
+          <li><a class="footer-nav-link" href="#contacts">Контакти</a></li>
         </ul>
       </nav>
       <address>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d635.2351965444534!2d30.5178739!3d50.4422036!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C7LiDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQviwgNSwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1731680493396!5m2!1sru!2sua"
-          width="605"
-          height="481"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
         <ul>
           <li><a href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
           <li>

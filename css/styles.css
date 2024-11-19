@@ -1,0 +1,58 @@
+:root {
+--color-brend: #2B7FFF;
+--color-primary: #011C44;
+--color-primary-light: #ffffff;
+;
+}
+
+/* Base */
+ul{
+    list-style-type: none;
+}
+
+body {
+    color: var(--color-primary);
+}
+
+/* Button */
+.button {
+   background-color: var(--color-brend);
+   border: var(--color-brend);
+   border-radius: 32px;
+   color: var(--color-primary-light);
+   cursor: pointer;
+
+   padding: 16px 32px 16px 32px;
+}
+
+/* Link */
+.nav-link {
+    color: var(--color-primary);
+}
+
+.nav-link:hover {
+    color: var(--color-brend);
+}
+
+/* Hero section */
+.hero-title {
+    color: var(--color-brend);
+}
+
+/* Sections */
+.section-title {
+    color: var(--color-primary);
+}
+
+.section-title .accent {
+    color: var(--color-brend);
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-primary);
+}
+
+.footer-nav-link {
+    color: var(--color-primary-light);
+}
