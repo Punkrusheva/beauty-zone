@@ -21,18 +21,33 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: 22px;
-    line-height: 1.5;
+    /* line-height: 1.5; */
 }
 
 h1, h2, h3, h4, h5, h6, p {
     margin-top: 0px;
 } 
 
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
 .container {
     width: 100%;
     max-width: 1288px;
     margin: 0 auto;
     padding: 0 24px;
+}
+
+/* Links */
+.header__nav-link:hover,
+.header__social-networks:hover,
+.footer__nav-link:hover,
+.footer__address-link:hover,
+.footer__social-networks:hover {
+    color: var(--color-brend);
 }
 
 /* Button */
@@ -53,17 +68,36 @@ h1, h2, h3, h4, h5, h6, p {
  .logo {
     width: 74px;
     height: 42px;
- }
-
-/* Header */
-/* .header {
-    padding: 32 auto 32 auto;
-    display: inline;
 }
 
-.header__nav{
-    display: inline-block;
-} */
+/* Header */
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 32px 0;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 40px;
+}
+
+.header__nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 56px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.header__soc-menu {
+    display: flex;
+    align-items: center;
+    gap: 32px
+}
 
 .header__nav-link, .header__social-networks {
     color: var(--color-primary);
@@ -72,10 +106,6 @@ h1, h2, h3, h4, h5, h6, p {
     font-weight: 700;
     line-height: 21.09px;
     text-align: left;
-}
-
-.header__nav-link:hover {
-    color: var(--color-brend);
 }
 
 /* Sections */
@@ -142,6 +172,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* Section whi us */
 .whi-us__card {
+    margin-bottom: 0;
     color: #000000;
     font-size: 18px;
     line-height: 24px;
@@ -149,9 +180,16 @@ h1, h2, h3, h4, h5, h6, p {
     text-align: center;
 }
 
-.privacy-policy {
-    text-decoration: underline;
+.whi-us__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 56px;
 }
+
+.whi-us__item {
+    padding: 24px 32px;
+}
+
 
 /* Section procedures */
 .procedures__title {
@@ -170,7 +208,19 @@ line-height: 25.8px;
 text-align: center;
 }
 
+.privacy-policy {
+    text-decoration: underline;
+}
+
 /* Footer */
+.footer-container {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 56px 0;
+}
+
 footer {
     background-color: var(--color-primary);
 }
@@ -182,7 +232,12 @@ footer {
     color: var(--color-primary-light);
     text-decoration: none;
     font-size: 16px;
-    line-height: 18.75px;
+    line-height: 18.5px;
+}
+
+.footer__social {
+    display: flex;
+    gap: 24px;
 }
 
 .footer__copyright {
