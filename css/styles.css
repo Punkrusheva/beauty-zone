@@ -162,18 +162,49 @@ ul {
 }
 
 /* Section about us */
+.about-us__container {
+    display: flex;
+    gap: 32px;
+    padding-bottom: 80px;
+    justify-content: space-between;
+}
+
+.about-us__content {
+    max-width: 709px;
+    padding-top: 40px;
+}
+
 .about-us__title {
     margin-bottom: 40px;
+    text-align: left;
 }
 
 .about-us__text {
     line-height: 38px;
+    margin-bottom: 40px;
+}
+
+.about-us__text:last-child {
+    margin-bottom: 0;
+}
+
+.about-us__images{
+    max-width: 499px;
+}
+
+.about-us__image:last-child {
+    max-width: 327px;
+    max-height: 327px;
+    margin-top: 40px;
+     margin-left: 172px; 
 }
 
 /* Section whi us */
 .whi-us__card {
     margin-bottom: 0;
     color: #000000;
+    border: 1px solid gray;
+    border-radius: 14px;
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
@@ -192,7 +223,29 @@ ul {
 
 
 /* Section procedures */
+.procedures__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    
+}
+
+.procedures__item {
+flex-basis: cal(100%- 40px/3);
+}
+
+.procedures__card {
+    background-color: blue;
+    padding: 372px 77px 32px 115px;
+    border: 0.1px solid blue;
+    border-radius: 4px 120px 4px 120px;
+}
+
 .procedures__title {
+    width: 152px;
+    height: 52px;
+    margin-bottom: 0;
     color: var(--color-primary-light);
     font-weight: 400;
     font-size: 22px;
@@ -201,11 +254,34 @@ ul {
 }
 
 /* Section contacts */
+.contacts__container {
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+}
+
+.contacts__map {
+    width: 605px;
+    height: 481px;
+    border: 0;
+    border-radius: 32px;
+}
+
+.contacts__form {
+    background-color: var(--color-primary);
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-basis: 327px;
+    padding: 48px 56px;
+}
+
 .contacts__form-title{
-color: var(--color-primary-light);
-font-weight: 600;
-line-height: 25.8px;
-text-align: center;
+    color: var(--color-primary-light);
+    font-weight: 600;
+    line-height: 25.8px;
+    text-align: center;
 }
 
 .privacy-policy {

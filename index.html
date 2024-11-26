@@ -68,30 +68,40 @@
       </section>
       <section class="section" id="about-us">
         <div class="container">
-          <h2 class="about-us__title section-title">
-            Перевтілюйтесь в <span class="accent" lang="en">Beauty Zone!</span>
-          </h2>
-          <div class="about-us__text">
-            <p>
-              Наша косметологічна клініка пропонує вам професійні послуги з
-              догляду за шкірою обличчя та тіла.
-            </p>
-            <p>
-              B <span class="text-accent" lang="en">beauty zone</span> ми
-              гарантуємо найвищі стандарти якості та приємний сервіс. Наші
-              косметологічні процедури та препарати допоможуть вам підтримувати
-              свою красу та молодість. З нами краса назавжди!
-            </p>
+          <div class="about-us__container">
+            <div class="about-us__content">
+              <h2 class="about-us__title section-title">
+                Перевтілюйтесь <br />
+                в
+                <span class="accent" lang="en">Beauty Zone!</span>
+              </h2>
+              <p class="about-us__text">
+                Наша косметологічна клініка пропонує вам професійні послуги
+                <br />
+                з догляду за шкірою обличчя та тіла.
+              </p>
+              <p class="about-us__text">
+                B <span class="text-accent" lang="en">beauty zone</span> ми
+                гарантуємо найвищі стандарти якості <br />
+                та приємний сервіс. Наші косметологічні процедури та препарати
+                <br />
+                допоможуть вам підтримувати свою красу та молодість.<br />
+                З нами краса назавжди!
+              </p>
+            </div>
+            <div class="about-us__images">
+              <img
+                class="about-us__image"
+                src="./images/woman-fase-before.jpg"
+                alt="обличча до процедури"
+              />
+              <img
+                class="about-us__image"
+                src="./images/woman-fase-after.jpg"
+                alt="обличча після процедури"
+              />
+            </div>
           </div>
-
-          <img
-            src="./images/woman-fase-before.jpg"
-            alt="обличча до процедури"
-          />
-          <img
-            src="./images/woman-fase-after.jpg"
-            alt="обличча після процедури"
-          />
         </div>
       </section>
       <section class="section" id="why-us">
@@ -135,26 +145,26 @@
           <h2 class="section-title">
             Наші <span class="accent">процедури</span>
           </h2>
-          <ul>
-            <li>
-              <article>
+          <ul class="procedures__list">
+            <li class="procedures__item">
+              <article class="procedures__card">
                 <h3 class="procedures__title">Маски для обличчя</h3>
-                <img src="./images/face-mask.jpg" alt="маски для обличча" />
+                <!-- <img src="./images/face-mask.jpg" alt="маски для обличча" /> -->
               </article>
             </li>
-            <li>
-              <article>
+            <li class="procedures__item">
+              <article class="procedures__card">
                 <h3 class="procedures__title">Уколи краси</h3>
-                <img src="./images/botox.jpg" alt="ботокс" />
+                <!-- <img src="./images/botox.jpg" alt="ботокс" /> -->
               </article>
             </li>
-            <li>
-              <article>
+            <li class="procedures__item">
+              <article class="procedures__card">
                 <h3 class="procedures__title">Апаратна чистка обличча</h3>
-                <img
+                <!-- <img
                   src="./images/face-cleaning.jpg"
                   alt="апаратна чистка обличча"
-                />
+                /> -->
               </article>
             </li>
           </ul>
@@ -165,26 +175,27 @@
           <h2 class="section-title">
             Як нас <span class="accent">знайти</span>
           </h2>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d635.2351965444534!2d30.5178739!3d50.4422036!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C7LiDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQviwgNSwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1731680493396!5m2!1sru!2sua"
-            width="605"
-            height="481"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-          <p class="contacts__form-title">
-            Запишіться <span class="accent">безкоштовно</span> та отримайте
-            подарунок
-          </p>
-          <button class="contacts__button" type="submit">
-            Записатись безкоштовно
-          </button>
-          <p class="contacts__small-text">
-            Натискаючи на кнопку я погоджуюсь
-            <span class="privacy-policy">з політикою конфіденційності</span>
-          </p>
+          <div class="contacts__container">
+            <iframe class="contacts__map"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d635.2351965444534!2d30.5178739!3d50.4422036!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C7LiDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQviwgNSwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1731680493396!5m2!1sru!2sua"
+              allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <div class="contacts__form">
+              <p class="contacts__form-title">
+                Запишіться <span class="accent">безкоштовно</span> та отримайте
+                подарунок
+              </p>
+              <button class="contacts__button" type="submit">
+                Записатись безкоштовно
+              </button>
+              <p class="contacts__small-text">
+                Натискаючи на кнопку я погоджуюсь
+                <span class="privacy-policy">з політикою конфіденційності</span>
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
